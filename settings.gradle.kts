@@ -1,8 +1,17 @@
+pluginManagement {
+    plugins {
+        kotlin("jvm") version "2.0.21"
+    }
+}
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+}
 rootProject.name = "IridiumCore"
 include("plugin")
 include("multiversion")
 include("multiversion:common")
 include("multiversion:default")
+include("multiversion:V1_21_R1")
 include("multiversion:v1_20_R4")
 include("multiversion:v1_20_R3")
 include("multiversion:v1_20_R2")
@@ -27,3 +36,4 @@ include("multiversion:v1_9_R2")
 include("multiversion:v1_9_R1")
 include("multiversion:v1_8_R3")
 include("multiversion:v1_8_R2")
+

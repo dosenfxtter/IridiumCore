@@ -39,7 +39,8 @@ public enum MinecraftVersion {
     V1_20_R1(() -> new NMS_V1_20_R1(), MultiVersion_V1_20_R1::new, IridiumInventory_V1_20_R1::new),
     V1_20_R2(() -> new NMS_V1_20_R2(), MultiVersion_V1_20_R2::new, IridiumInventory_V1_20_R2::new),
     V1_20_R3(() -> new NMS_V1_20_R3(), MultiVersion_V1_20_R3::new, IridiumInventory_V1_20_R3::new),
-    V1_20_R4(() -> new NMS_V1_20_R4(), MultiVersion_V1_20_R4::new, IridiumInventory_V1_20_R4::new);
+    V1_20_R4(() -> new NMS_V1_20_R4(), MultiVersion_V1_20_R4::new, IridiumInventory_V1_20_R4::new),
+    V1_21_R1(() -> new NMS_V1_21_R1(), MultiVersion_V1_21_R1::new, IridiumInventory_V1_21_R1::new);
 
     private final Supplier<NMS> nmsSupplier;
     private final JavaPluginSupplier<MultiVersion> multiVersionSupplier;

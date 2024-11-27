@@ -134,6 +134,13 @@ public class IridiumCore extends JavaPlugin {
             return;
         }
 
+        if (Bukkit.getVersion().contains("1.21.1")) {
+            this.nms = MinecraftVersion.V1_21_R1.getNms();
+            this.multiVersion = MinecraftVersion.V1_21_R1.getMultiVersion(this);
+            this.iridiumInventory = MinecraftVersion.V1_21_R1.getInventory();
+            return;
+        }
+
         try {
             String version = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
             MinecraftVersion minecraftVersion = MinecraftVersion.byName(version);
